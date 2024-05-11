@@ -8,6 +8,7 @@
   --fs-400: .8125rem;
   --fs-500: .9625rem;
   --fs-900: 2rem;
+  --br: 0.5rem;
 }
 @media (min-width: 50em) {
   :root {
@@ -121,8 +122,58 @@ h1 {
   margin-top: var(--flow-space, 1rem);
 }
 
-.ratings li {
+.split {
+  display: flex;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.quotes {
+  --spacer: 2rem;
+}
+.quotes blockquote {
+  background: var(--clr-primary-700);
+  color: var(--clr-neutral-200);
+  text-align: left;
+  border-radius: var(--br);
+  padding: var(--spacer);
+  max-width: 25rem;
+  margin: 0 auto;
+}
+.quotes img {
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: var(--spacer);
+}
+.quotes .status {
+  color: var(--clr-primary-400);
+}
+.quotes .quote {
+  margin-top: var(--spacer);
+}
+.quotes .name {
+  font-weight: 800;
+}
+
+.ratings > li {
   background: var(--clr-neutral-200);
   font-weight: 800;
   color: var(--clr-primary-700);
+  padding: 0.5rem;
+  border-radius: var(--br);
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ratings > li::before {
+  content: "";
+  width: 100px;
+  height: 1rem;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 0.5rem;
+  background-image: url("/images/icon-star.svg");
+  background-repeat: round;
 }/*# sourceMappingURL=main.css.map */

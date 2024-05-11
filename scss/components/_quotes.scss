@@ -1,0 +1,32 @@
+.quotes {
+
+    --spacer: 2rem;
+
+    blockquote {
+        background: var(--clr-primary-700);
+        color: var(--clr-neutral-200);
+        text-align: left;
+        border-radius: var(--br);
+        padding: var(--spacer);
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 3rem;
+        border-radius: 50%;
+        margin-right: var(--spacer);
+    }
+
+    .status {
+        color: var(--clr-primary-400);
+    }
+
+    .quote {
+        margin-top: var(--spacer);
+    }
+
+    .name {
+        font-weight: 800;
+    }
+}

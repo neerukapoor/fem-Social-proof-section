@@ -1,7 +1,23 @@
 .ratings{
-    li {
+    > li {
         background: var(--clr-neutral-200);
         font-weight: 800;
         color: var(--clr-primary-700);
+        padding: 0.5rem;
+        border-radius: var(--br);
+        max-width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        &::before{
+            content: '';
+            width: 100px;
+            height: 1rem;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 0.5rem;
+            background-image: url("/images/icon-star.svg");
+            background-repeat: round;
+        }
     }
 }
